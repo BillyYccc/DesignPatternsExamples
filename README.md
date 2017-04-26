@@ -1,5 +1,5 @@
 # DesignPatternsExamples
-Examples of multiple design patterns,the project is built based Gradle
+Examples of multiple design patterns,the project is built based on Gradle
 
 ## SingletonDemo
 单例模式
@@ -8,3 +8,4 @@ Examples of multiple design patterns,the project is built based Gradle
 * LazyInitializationSingletonB 改进过的懒汉式单例，线程安全
 * DoubleCheckedLockingSingleton 双重检查锁单例
 * EnumSingleton 枚举类型单例
+* BillPughSingleton 静态内部类单例

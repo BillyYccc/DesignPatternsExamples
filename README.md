@@ -7,3 +7,4 @@ Examples of multiple design patterns,the project is built based Gradle
 * LazyInitializationSingletonA 懒汉式单例，线程不安全
 * LazyInitializationSingletonB 改进过的懒汉式单例，线程安全
 * DoubleCheckedLockingSingleton 双重检查锁单例
+* EnumSingleton 枚举类型单例

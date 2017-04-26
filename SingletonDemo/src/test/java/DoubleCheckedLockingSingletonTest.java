@@ -1,4 +1,3 @@
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -9,16 +8,16 @@ import static org.junit.Assert.assertThat;
  * Email: billy112487983@gmail.com
  */
 
-public class LazyInitializationSingletonBTest implements Runnable {
+public class DoubleCheckedLockingSingletonTest implements Runnable {
     @Override
     public void run() {
-        LazyInitializationSingletonB s = LazyInitializationSingletonB.getInstance();
+        DoubleCheckedLockingSingleton s = DoubleCheckedLockingSingleton.getInstance();
         System.out.println(s.toString());
     }
 
     @Test
-    public void lazyInitializationSingletonBTest() {
-        LazyInitializationSingletonBTest test = new LazyInitializationSingletonBTest();
+    public void doubleCheckedLockingSingletonTest() {
+        DoubleCheckedLockingSingletonTest test = new DoubleCheckedLockingSingletonTest();
         Thread t1 = new Thread(test);
         Thread t2 = new Thread(test);
         Thread t3 = new Thread(test);
@@ -26,9 +25,9 @@ public class LazyInitializationSingletonBTest implements Runnable {
         t2.start();
         t3.start();
 
-        LazyInitializationSingletonB s1 = LazyInitializationSingletonB.getInstance();
-        LazyInitializationSingletonB s2 = LazyInitializationSingletonB.getInstance();
-        LazyInitializationSingletonB s3 = LazyInitializationSingletonB.getInstance();
+        DoubleCheckedLockingSingleton s1 = DoubleCheckedLockingSingleton.getInstance();
+        DoubleCheckedLockingSingleton s2 = DoubleCheckedLockingSingleton.getInstance();
+        DoubleCheckedLockingSingleton s3 = DoubleCheckedLockingSingleton.getInstance();
 
         System.out.println(s1.toString());
         System.out.println(s2.toString());
@@ -37,6 +36,5 @@ public class LazyInitializationSingletonBTest implements Runnable {
         assertThat(s1.toString(), equalTo(s2.toString()));
         assertThat(s2.toString(), equalTo(s3.toString()));
         assertThat(s1.toString(), equalTo(s3.toString()));
-
     }
 }

@@ -1,5 +1,5 @@
 # DesignPatternsExamples
-Examples of multiple design patterns,the project is built based on Intellij IDEA + Gradle
+Examples of multiple design patterns,the project is built based Gradle
 
 ## SingletonDemo
 单例模式

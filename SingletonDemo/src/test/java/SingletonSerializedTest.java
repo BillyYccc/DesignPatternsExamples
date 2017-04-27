@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import java.io.*;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
 
@@ -13,8 +14,7 @@ import static org.junit.Assert.assertThat;
 
 public class SingletonSerializedTest {
     @Test
-    public void serializedSingletonATest() throws IOException, FileNotFoundException,
-            ClassNotFoundException {
+    public void serializedSingletonATest() throws IOException, ClassNotFoundException {
         SerializeSingletonA instanceA = SerializeSingletonA.getInstance();
         //Serialize Object to File
         ObjectOutput out = new ObjectOutputStream(new FileOutputStream("filename.test"));
@@ -28,5 +28,40 @@ public class SingletonSerializedTest {
 
         //判断两个实例是否相同
         assertThat(instanceA.hashCode(), not(instanceB.hashCode()));
+    }
+
+    @Test
+    public void serializedSingletonBTest() throws IOException, ClassNotFoundException {
+        SerializeSingletonB instanceA = SerializeSingletonB.getInstance();
+        //Serialize Object to File
+        ObjectOutput out = new ObjectOutputStream(new FileOutputStream("filename2.test"));
+        out.writeObject(instanceA);
+        out.close();
+
+        //Deserialize from File to Object
+        ObjectInput in = new ObjectInputStream(new FileInputStream("filename2.test"));
+        SerializeSingletonB instanceB = (SerializeSingletonB) in.readObject();
+        in.close();
+
+        //判断两个实例是否相同
+        assertThat(instanceA.hashCode(), is(instanceB.hashCode()));
+    }
+
+    //枚举类型单例序列化和反序列化不会出现异常
+    @Test
+    public void serializedSingletonEnumTest() throws IOException, ClassNotFoundException {
+        EnumSingleton instanceA = EnumSingleton.INSTANCE;
+        //Serialize Object to File
+        ObjectOutput out = new ObjectOutputStream(new FileOutputStream("filename3.test"));
+        out.writeObject(instanceA);
+        out.close();
+
+        //Deserialize from File to Object
+        ObjectInput in = new ObjectInputStream(new FileInputStream("filename3.test"));
+        EnumSingleton instanceB = (EnumSingleton) in.readObject();
+        in.close();
+
+        //判断两个实例是否相同
+        assertThat(instanceA.hashCode(), is(instanceB.hashCode()));
     }
 }

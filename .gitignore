@@ -32,3 +32,6 @@ local.properties
 .idea/gradle.xml
 .idea/dictionaries
 .idea/libraries
+
+# TestFile
+*.test

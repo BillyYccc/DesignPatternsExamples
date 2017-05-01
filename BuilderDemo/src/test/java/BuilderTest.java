@@ -19,9 +19,8 @@ public class BuilderTest {
 
     @Test
     public void builderTest2() {
-        AudiCarBuilder audiCarBuilder = new AudiCarBuilder();
         //有时候会省略Director,直接使用builder
-        AudiCar audiCar1 = audiCarBuilder.buildEngine()
+        AudiCar audiCar1 = new AudiCar.AudiCarBuilder().buildEngine()
                 .buildSystem()
                 .buildBrand()
                 .buildWheel("倍耐力轮胎")
@@ -31,9 +30,8 @@ public class BuilderTest {
 
     @Test
     public void builderTest3() {
-        AudiCarBuilder audiCarBuilder = new AudiCarBuilder();
         //修改AudiCar的装配过程，先装配系统再装配发动机
-        AudiCar audiCar2 = audiCarBuilder.buildSystem()
+        AudiCar audiCar2 = new AudiCar.AudiCarBuilder().buildSystem()
                 .buildEngine()
                 .buildWheel("倍耐力轮胎")
                 .buildBrand()

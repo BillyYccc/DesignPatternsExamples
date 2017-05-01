@@ -25,4 +25,36 @@ public class AudiCar extends Car {
     public void setSystem() {
         this.system = "Audi System";
     }
+
+    /**
+     *  省略Director，直接使用Builder
+     */
+    public static class AudiCarBuilder {
+        private AudiCar audiCar = new AudiCar();
+
+        public AudiCarBuilder buildEngine() {
+            audiCar.setEngine();
+            return this;
+        }
+
+        public AudiCarBuilder buildSystem() {
+            audiCar.setSystem();
+            return this;
+        }
+
+        public AudiCarBuilder buildBrand() {
+            audiCar.setBrand();
+            return this;
+        }
+
+        public AudiCarBuilder buildWheel(String wheel) {
+            audiCar.wheel = wheel;
+            return this;
+        }
+
+        public AudiCar build() {
+            return audiCar;
+        }
+
+    }
 }

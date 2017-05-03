@@ -17,5 +17,7 @@ Examples of multiple design patterns,the project is built based on Gradle
 建造者模式
 * builderTest1() 使用Director进行装配
 * builderTest2() 
+<br>builderTest3() 省略Director，直接使用builder进行装配
 
-  builderTest3() 省略Director，直接使用builder进行装配
+## FactoryMethodDemo
+工厂方法模式

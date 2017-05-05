@@ -21,3 +21,6 @@ Examples of multiple design patterns,the project is built based on Gradle
 
 ## FactoryMethodDemo
 工厂方法模式
+
+## SimpleFactoryDemo
+简单工厂模式(静态工厂方法)

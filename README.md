@@ -24,3 +24,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ## SimpleFactoryDemo
 [简单工厂模式(静态工厂方法)](http://billyyccc.com/2017/05/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%885%EF%BC%89%EF%BC%9A%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/)
+
+## AbstractFactoryDemo
+抽象工厂模式

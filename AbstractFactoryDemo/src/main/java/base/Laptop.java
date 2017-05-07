@@ -14,6 +14,16 @@ public abstract class Laptop {
     protected GPU mGpu;
     protected RAM mRam;
 
+    public String getOs() {
+        return mOs;
+    }
+
+    public void setOs(String Os) {
+        mOs = Os;
+    }
+
+    protected String mOs;
+
     protected Laptop(CPU cpu, GPU gpu, RAM ram) {
         mCpu = cpu;
         mGpu = gpu;
@@ -40,6 +50,7 @@ public abstract class Laptop {
                 + "\nLaptop RAM Brand : " + this.getRam().getRAMBrand()
                 + "\nLaptop RAM Capacity : " + this.getRam().getRAMCapacity()
                 + "\nLaptop RAM Price : " + this.getRam().getPrice()
+                + "\nLaptop OS : " + this.getOs()
                 + "\nLaptop Total Price : " + this.getTotalPrice();
     }
 }

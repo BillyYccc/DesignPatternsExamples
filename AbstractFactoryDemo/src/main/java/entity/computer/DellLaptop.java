@@ -1,8 +1,8 @@
 package entity.computer;
 
 import base.CPU;
-import base.DesktopComputer;
 import base.GPU;
+import base.Laptop;
 import base.RAM;
 
 /**
@@ -10,9 +10,10 @@ import base.RAM;
  * Email: billy112487983@gmail.com
  */
 
-public class LenovoDesktopComputer extends DesktopComputer {
-    public LenovoDesktopComputer(CPU cpu, GPU gpu, RAM ram) {
+public class DellLaptop extends Laptop {
+    public DellLaptop(CPU cpu, GPU gpu, RAM ram) {
         super(cpu, gpu, ram);
+        this.setOs("Windows");
     }
 
     @Override

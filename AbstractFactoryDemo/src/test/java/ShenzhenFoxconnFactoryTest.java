@@ -13,14 +13,14 @@ public class ShenzhenFoxconnFactoryTest {
     @Test
     public void shenzhenFoxconnFactoryTest1() {
         AbstractComputerFactory shenzhenFoxcnnFactory = new ShenzhenFoxconnFactory();
-        Laptop hpLaptop = shenzhenFoxcnnFactory.createLaptop();
-        System.out.println(hpLaptop.getInfo());
+        Laptop dellLaptop = shenzhenFoxcnnFactory.createLaptop();
+        System.out.println(dellLaptop.getInfo());
     }
 
     @Test
     public void shenzhenFoxconnFactoryTest2() {
         AbstractComputerFactory shenzhenFoxcnnFactory = new ShenzhenFoxconnFactory();
-        DesktopComputer lenovoPC = shenzhenFoxcnnFactory.createDesktopComputer();
-        System.out.println(lenovoPC.getInfo());
+        DesktopComputer applePC = shenzhenFoxcnnFactory.createDesktopComputer();
+        System.out.println(applePC.getInfo());
     }
 }

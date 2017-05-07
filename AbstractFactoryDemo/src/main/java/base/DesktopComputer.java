@@ -14,20 +14,20 @@ public abstract class DesktopComputer {
     protected GPU mGpu;
     protected RAM mRam;
 
-    public DesktopComputer(CPU cpu, GPU gpu, RAM ram) {
+    protected DesktopComputer(CPU cpu, GPU gpu, RAM ram) {
         mCpu = cpu;
         mGpu = gpu;
         mRam = ram;
     }
 
-    public abstract CPU getCpu();
+    protected abstract CPU getCpu();
 
-    public abstract GPU getGpu();
+    protected abstract GPU getGpu();
 
-    public abstract RAM getRam();
+    protected abstract RAM getRam();
 
     //获取总价的方法
-    public abstract double getTotalPrice();
+    protected abstract double getTotalPrice();
 
     public String getInfo() {
         return "DesktopComputer CPU Brand : " + this.getCpu().getCPUBrand()

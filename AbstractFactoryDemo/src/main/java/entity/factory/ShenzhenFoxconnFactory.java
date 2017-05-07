@@ -8,8 +8,8 @@ package entity.factory;
 import base.AbstractComputerFactory;
 import base.DesktopComputer;
 import base.Laptop;
-import entity.computer.HpLaptop;
-import entity.computer.LenovoDesktopComputer;
+import entity.computer.AppleDesktopComputer;
+import entity.computer.DellLaptop;
 import entity.cpu.AMD_A8_7650k;
 import entity.cpu.AMD_FX_8300;
 import entity.gpu.AMD_RX480;
@@ -23,11 +23,11 @@ import entity.ram.SamsungMemory;
 public class ShenzhenFoxconnFactory implements AbstractComputerFactory {
     @Override
     public Laptop createLaptop() {
-        return new HpLaptop(new AMD_A8_7650k(), new AMD_RX480(), new SamsungMemory());
+        return new DellLaptop(new AMD_A8_7650k(), new AMD_RX480(), new SamsungMemory());
     }
 
     @Override
     public DesktopComputer createDesktopComputer() {
-        return new LenovoDesktopComputer(new AMD_FX_8300(), new AMD_RX480(), new SamsungMemory());
+        return new AppleDesktopComputer(new AMD_FX_8300(), new AMD_RX480(), new SamsungMemory());
     }
 }

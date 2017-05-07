@@ -13,6 +13,7 @@ import base.RAM;
 public class DellDesktopComputer extends DesktopComputer {
     public DellDesktopComputer(CPU cpu, GPU gpu, RAM ram) {
         super(cpu, gpu, ram);
+        this.setOs("Windows");
     }
 
     @Override

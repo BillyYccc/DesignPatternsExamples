@@ -13,6 +13,15 @@ public abstract class DesktopComputer {
     protected CPU mCpu;
     protected GPU mGpu;
     protected RAM mRam;
+    protected String mOs;
+
+    public String getOs() {
+        return mOs;
+    }
+
+    public void setOs(String os) {
+        mOs = os;
+    }
 
     protected DesktopComputer(CPU cpu, GPU gpu, RAM ram) {
         mCpu = cpu;
@@ -40,6 +49,7 @@ public abstract class DesktopComputer {
                 + "\nDesktopComputer RAM Brand : " + this.getRam().getRAMBrand()
                 + "\nDesktopComputer RAM Capacity : " + this.getRam().getRAMCapacity()
                 + "\nDesktopComputer RAM Price : " + this.getRam().getPrice()
+                + "\nDesktopComputer OS : " + this.getOs()
                 + "\nDesktopComputer Total Price : " + this.getTotalPrice();
     }
 }

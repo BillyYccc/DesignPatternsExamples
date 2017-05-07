@@ -13,6 +13,7 @@ import base.RAM;
 public class AppleLaptop extends Laptop {
     public AppleLaptop(CPU cpu, GPU gpu, RAM ram) {
         super(cpu, gpu, ram);
+        this.setOs("OS X");
     }
 
     @Override

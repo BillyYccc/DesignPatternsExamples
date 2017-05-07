@@ -19,7 +19,7 @@ import entity.ram.KingstonMemory;
  * 成都富士康电脑工厂，负责生产Apple的笔记本电脑和Dell的台式电脑
  */
 
-public class ChengduFoxconnFactory extends AbstractComputerFactory {
+public class ChengduFoxconnFactory implements AbstractComputerFactory {
     @Override
     public Laptop createLaptop() {
         return new AppleLaptop(new Intel_i7_6500u(), new Nvidia_GTX1080(), new KingstonMemory());

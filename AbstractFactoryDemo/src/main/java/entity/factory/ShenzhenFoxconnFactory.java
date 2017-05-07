@@ -20,7 +20,7 @@ import entity.ram.SamsungMemory;
  */
 
 
-public class ShenzhenFoxconnFactory extends AbstractComputerFactory {
+public class ShenzhenFoxconnFactory implements AbstractComputerFactory {
     @Override
     public Laptop createLaptop() {
         return new HpLaptop(new AMD_A8_7650k(), new AMD_RX480(), new SamsungMemory());

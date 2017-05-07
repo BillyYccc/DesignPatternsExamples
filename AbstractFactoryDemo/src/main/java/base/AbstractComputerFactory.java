@@ -9,8 +9,8 @@ package base;
  * 抽象的生产工厂，既能生产台式电脑又能生产笔记本电脑
  */
 
-public abstract class AbstractComputerFactory {
-    public abstract DesktopComputer createDesktopComputer();
+public interface AbstractComputerFactory {
+    DesktopComputer createDesktopComputer();
 
-    public abstract Laptop createLaptop();
+    Laptop createLaptop();
 }

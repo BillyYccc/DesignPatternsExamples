@@ -27,3 +27,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ## AbstractFactoryDemo
 [抽象工厂模式](http://billyyccc.com/2017/05/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%886%EF%BC%89%EF%BC%9A%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82ABSTRACTFACTORY/)
+
+## PrototypeDemo
+原型模式

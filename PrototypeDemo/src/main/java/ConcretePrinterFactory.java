@@ -7,6 +7,22 @@ import java.util.Map;
  */
 
 public class ConcretePrinterFactory implements PrinterFactory {
+    /**
+     * 使用单例构造ConcretePrinterFactory
+     * Use Singleton to construct ConcretePrinterFactory
+     */
+    private ConcretePrinterFactory() {
+
+    }
+
+    public static class ConcretePrinterFactoryHolder {
+        private static final ConcretePrinterFactory INSTANCE = new ConcretePrinterFactory();
+    }
+
+    public static ConcretePrinterFactory getInstance() {
+        return ConcretePrinterFactoryHolder.INSTANCE;
+    }
+
     private static Map<String, FilePrototype> filePrototypeMap = new HashMap();
 
     static {

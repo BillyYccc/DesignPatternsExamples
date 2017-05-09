@@ -1,5 +1,6 @@
+import copy.Book;
+import copy.shallowcopy.Newspaper;
 import org.junit.Test;
-import shallowcopy.Book;
 
 /**
  * Created by Billy Yuan on 2017/5/9.
@@ -9,19 +10,11 @@ import shallowcopy.Book;
 public class ShallowCopyTest {
     @Test
     public void shallowCopyTest() throws CloneNotSupportedException {
-        Book book1 = new Book("Think In Java", 800);
-        Book book2 = (Book) book1.clone();
+        System.out.print("执行Newspaper的拷贝...");
 
-        compareCopyMethod(book1, book2);
-    }
+        Newspaper newspaper1 = new Newspaper("Think In Java", 800);
+        Newspaper newspaper2 = (Newspaper) newspaper1.clone();
 
-    public static void compareCopyMethod(Book book1, Book book2) {
-        if ((book1.getPage() == book2.getPage())
-                && (book1.getName().equals(book2.getName()))
-                && (book1.getName() == book2.getName())) {
-            System.out.println("本次拷贝是浅拷贝的...");
-        } else {
-            System.out.println("本次拷贝是深拷贝的...");
-        }
+        Book.compareCopyMethod(newspaper1, newspaper2);
     }
 }

@@ -1,4 +1,6 @@
-package deepcopy;
+package copy.deepcopy;
+
+import copy.Book;
 
 import java.io.*;
 
@@ -7,7 +9,7 @@ import java.io.*;
  * Email: billy112487983@gmail.com
  */
 
-public class Magazine implements Serializable {
+public class Magazine extends Book implements Serializable {
     private String name;
     private int page;
 

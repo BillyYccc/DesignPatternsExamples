@@ -1,7 +1,11 @@
-import deepcopy.Magazine;
+import copy.Book;
+import copy.deepcopy.Bookshelf;
+import copy.deepcopy.Diary;
+import copy.deepcopy.Magazine;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by Billy Yuan on 2017/5/9.
@@ -9,21 +13,48 @@ import java.io.IOException;
  */
 
 public class DeepCopyTest {
-    @Test
-    public void deepCopyInSerializationTest() throws IOException, ClassNotFoundException {
-        deepcopy.Magazine magazine1 = new deepcopy.Magazine("Times", 50);
-        deepcopy.Magazine magazine2 = magazine1.deepClone();
+    public boolean isShallowCopy;
 
-        compareCopyMethod(magazine1, magazine2);
+    @Test
+    public void deepCopyStringTest() throws CloneNotSupportedException {
+        System.out.print("执行Diary的拷贝...");
+
+        Diary diary1 = new Diary("人民的名义", 500);
+        Diary diary2 = (Diary) diary1.clone();
+
+        Book.compareCopyMethod(diary1, diary2);
     }
 
-    public static void compareCopyMethod(Magazine magazine1, Magazine magazine2) {
-        if ((magazine1.getPage() == magazine2.getPage())
-                && (magazine1.getName().equals(magazine2.getName()))
-                && (magazine1.getName() == magazine2.getName())) {
-            System.out.println("本次拷贝是浅拷贝的...");
-        } else {
-            System.out.println("本次拷贝是深拷贝的...");
+    @Test
+    public void deepCopyArrayListTest() throws CloneNotSupportedException {
+        System.out.print("执行Bookshelf的拷贝...");
+
+        ArrayList<Magazine> arrayList = new ArrayList<>();
+        Bookshelf bookshelf1 = new Bookshelf(arrayList);
+        Bookshelf bookshelf2 = (Bookshelf) bookshelf1.clone();
+
+        for (int i = 0; i < bookshelf1.getBookList().size(); i++) {
+            if (bookshelf1.getBookList().get(i).equals(bookshelf2.getBookList().get(i))
+                    && bookshelf1.getBookList().get(i) == bookshelf2.getBookList().get(i)) {
+                isShallowCopy = true;
+            } else {
+                isShallowCopy = false;
+            }
         }
+
+        if (isShallowCopy) {
+            System.out.println("本次拷贝方式为浅拷贝...");
+        } else {
+            System.out.println("本次拷贝方式为深拷贝...");
+        }
+    }
+
+    @Test
+    public void deepCopyInSerializationTest() throws IOException, ClassNotFoundException {
+        System.out.print("执行Magazine的拷贝...");
+        Magazine magazine1 = new Magazine("Times", 50);
+        Magazine magazine2 = magazine1.deepClone();
+
+        Book.compareCopyMethod(magazine1, magazine2);
     }
 }

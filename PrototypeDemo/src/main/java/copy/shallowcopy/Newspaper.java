@@ -1,15 +1,17 @@
-package shallowcopy;
+package copy.shallowcopy;
+
+import copy.Book;
 
 /**
  * Created by Billy Yuan on 2017/5/9.
  * Email: billy112487983@gmail.com
  */
 
-public class Book implements Cloneable {
+public class Newspaper extends Book implements Cloneable {
     private String name;
     private int page;
 
-    public Book(String name, int page) {
+    public Newspaper(String name, int page) {
         this.name = name;
         this.page = page;
     }

@@ -32,7 +32,7 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 原型模式
 #### copy包里面是深拷贝跟浅拷贝的实现
 * deepcopy 深拷贝的三种实现
-1. Diary 直接拷贝
+1. Diary 对String进行深拷贝
 1. Bookshelf 对ArrayList进行深拷贝
 1. Magazine 通过序列化的方式进行深拷贝
 

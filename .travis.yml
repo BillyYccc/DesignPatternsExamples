@@ -1,5 +1,6 @@
 language: java
 sudo: false
+dist: trusty
 
 jdk:
   - oraclejdk8
@@ -18,5 +19,3 @@ cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-
-script: ./gradlew check -i

@@ -29,7 +29,8 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [抽象工厂模式](http://billyyccc.com/2017/05/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%886%EF%BC%89%EF%BC%9A%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82ABSTRACTFACTORY/)
 
 ## PrototypeDemo
-原型模式
+[原型模式](http://billyyccc.com/2017/05/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%887%EF%BC%89%EF%BC%9A%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8FPROTOTYPE/)
+
 #### copy包里面是深拷贝跟浅拷贝的实现
 * deepcopy 深拷贝的三种实现
 1. Diary 对String进行深拷贝

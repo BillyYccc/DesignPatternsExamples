@@ -6,20 +6,20 @@ import java.util.Map;
  * Email: billy112487983@gmail.com
  */
 
-public class ConcretePrinterFactory implements PrinterFactory {
+public class ConcretePrinter implements Printer {
     /**
      * 使用单例构造ConcretePrinterFactory
-     * Use Singleton to construct ConcretePrinterFactory
+     * Use Singleton to construct ConcretePrinter
      */
-    private ConcretePrinterFactory() {
+    private ConcretePrinter() {
 
     }
 
     public static class ConcretePrinterFactoryHolder {
-        private static final ConcretePrinterFactory INSTANCE = new ConcretePrinterFactory();
+        private static final ConcretePrinter INSTANCE = new ConcretePrinter();
     }
 
-    public static ConcretePrinterFactory getInstance() {
+    public static ConcretePrinter getInstance() {
         return ConcretePrinterFactoryHolder.INSTANCE;
     }
 

@@ -3,6 +3,6 @@
  * Email: billy112487983@gmail.com
  */
 
-public interface PrinterFactory {
+public interface Printer {
     FilePrototype printFileTemplate(String type) throws CloneNotSupportedException;
 }

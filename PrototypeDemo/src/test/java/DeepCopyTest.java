@@ -34,11 +34,10 @@ public class DeepCopyTest {
         Bookshelf bookshelf2 = (Bookshelf) bookshelf1.clone();
 
         for (int i = 0; i < bookshelf1.getBookList().size(); i++) {
-            if (bookshelf1.getBookList().get(i).equals(bookshelf2.getBookList().get(i))
-                    && bookshelf1.getBookList().get(i) == bookshelf2.getBookList().get(i)) {
-                isShallowCopy = true;
+            if (bookshelf1.getBookList().get(i).getName().equals(bookshelf2.getBookList().get(i).getName())) {
+                isShallowCopy = bookshelf1.getBookList().get(i) == bookshelf2.getBookList().get(i);
             } else {
-                isShallowCopy = false;
+                System.out.println("拷贝方式出错...");
             }
         }
 

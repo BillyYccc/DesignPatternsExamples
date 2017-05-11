@@ -1,7 +1,8 @@
 # DesignPatternsExamples
 Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%881%EF%BC%89/),the project is built based on Gradle and Intellij IDEA 
+
 [![Build Status](https://travis-ci.org/BillyYccc/DesignPatternsExamples.svg?branch=master)](https://travis-ci.org/BillyYccc/DesignPatternsExamples)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BillyYccc/DesignPatternsExamples/blob/master/LICENSE)
 
 ## SingletonDemo
 [单例模式](http://billyyccc.com/2017/04/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%882%EF%BC%89%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FSINGLETON/)

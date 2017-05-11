@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo.iml" group="AbstractFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo_main.iml" group="AbstractFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AbstractFactoryDemo/AbstractFactoryDemo_test.iml" group="AbstractFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo.iml" group="BuilderDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo_main.iml" group="BuilderDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/BuilderDemo/BuilderDemo_test.iml" group="BuilderDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DesignPatternExamples.iml" filepath="$PROJECT_DIR$/.idea/modules/DesignPatternExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DesignPatternExamples_main.iml" filepath="$PROJECT_DIR$/.idea/modules/DesignPatternExamples_main.iml" group="DesignPatternExamples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DesignPatternExamples_test.iml" filepath="$PROJECT_DIR$/.idea/modules/DesignPatternExamples_test.iml" group="DesignPatternExamples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo.iml" group="FactoryMethodDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo_main.iml" group="FactoryMethodDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FactoryMethodDemo/FactoryMethodDemo_test.iml" group="FactoryMethodDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo.iml" group="PrototypeDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo_main.iml" group="PrototypeDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PrototypeDemo/PrototypeDemo_test.iml" group="PrototypeDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo.iml" group="SimpleFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo_main.iml" group="SimpleFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SimpleFactoryDemo/SimpleFactoryDemo_test.iml" group="SimpleFactoryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo.iml" group="SingletonDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo_main.iml" group="SingletonDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SingletonDemo/SingletonDemo_test.iml" group="SingletonDemo" />
+    </modules>
+  </component>
+</project>

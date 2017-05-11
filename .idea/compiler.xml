@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="AbstractFactoryDemo_main" target="1.8" />
+      <module name="AbstractFactoryDemo_test" target="1.8" />
+      <module name="BuilderDemo_main" target="1.8" />
+      <module name="BuilderDemo_test" target="1.8" />
+      <module name="DesignPatternExamples_main" target="1.8" />
+      <module name="DesignPatternExamples_test" target="1.8" />
+      <module name="FactoryMethodDemo_main" target="1.8" />
+      <module name="FactoryMethodDemo_test" target="1.8" />
+      <module name="PrototypeDemo_main" target="1.8" />
+      <module name="PrototypeDemo_test" target="1.8" />
+      <module name="SimpleFactoryDemo_main" target="1.8" />
+      <module name="SimpleFactoryDemo_test" target="1.8" />
+      <module name="SingletonDemo_main" target="1.8" />
+      <module name="SingletonDemo_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -8,6 +8,8 @@
       <module name="BuilderDemo_test" target="1.8" />
       <module name="DesignPatternExamples_main" target="1.8" />
       <module name="DesignPatternExamples_test" target="1.8" />
+      <module name="DesignPatternsExamples-AdapterDemo_main" target="1.8" />
+      <module name="DesignPatternsExamples-AdapterDemo_test" target="1.8" />
       <module name="FactoryMethodDemo_main" target="1.8" />
       <module name="FactoryMethodDemo_test" target="1.8" />
       <module name="PrototypeDemo_main" target="1.8" />

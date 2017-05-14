@@ -1,3 +1,5 @@
+package objectadapterdemo;
+
 /**
  * Created by Billy Yuan on 2017/5/13.
  * Email: billy112487983@gmail.com
@@ -11,7 +13,9 @@ public class SamsungDisplayMonitor {
     }
 
     public void display() {
-        mVgaOutputPort.outputSignal();
+        if (mVgaOutputPort == null) {
+            return;
+        }
         System.out.println("三星显示器收到VGA信号，正常显示...");
     }
 }

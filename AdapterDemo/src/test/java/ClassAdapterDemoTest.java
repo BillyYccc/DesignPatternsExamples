@@ -1,16 +1,17 @@
+import classadapterdemo.*;
 import org.junit.Test;
 
 /**
- * Created by Billy Yuan on 2017/5/13.
+ * Created by Billy Yuan on 2017/5/14.
  * Email: billy112487983@gmail.com
  */
 
-public class AdapterDemoTest {
+public class ClassAdapterDemoTest {
     @Test
-    public void transferByHDMI() {
+    public void transferByHdmi() {
         //将HDMI接口接上macbook
         MacbookPro macbookPro = new MacbookPro();
-        HdmiPort hdmiPort = new HdmiPort();
+        HdmiPort hdmiPort = new ConcreteHdmiPort();
         macbookPro.setDigitalSignalOutputPort(hdmiPort);
 
         //将Dell显示器接上HDMI接口
@@ -25,19 +26,18 @@ public class AdapterDemoTest {
     @Test
     public void transferByVga() {
         MacbookPro macbookPro = new MacbookPro();
-        HdmiPort hdmiPort = new HdmiPort();
-        HdmiToVgaAdpater hdmiToVgaAdpater = new HdmiToVgaAdpater();
+        HdmiToVgaClassAdapter hdmiToVgaClassAdapter = new HdmiToVgaClassAdapter();
 
         //将HDMI接口连上笔记本和Adapter
-        macbookPro.setDigitalSignalOutputPort(hdmiPort);
-        hdmiToVgaAdpater.connectLaptopWithHdmi(hdmiPort);
+        macbookPro.setDigitalSignalOutputPort(hdmiToVgaClassAdapter);
 
         //将Adapter的VGA接口连上三星显示器
         SamsungDisplayMonitor samsungDisplayMonitor = new SamsungDisplayMonitor();
-        samsungDisplayMonitor.setVgaOutputPort(hdmiToVgaAdpater);
+        samsungDisplayMonitor.setVgaOutputPort(hdmiToVgaClassAdapter);
 
         //连接好后三星显示器显示macbook传过来的信号
         macbookPro.transferDigitalSignal();
+        hdmiToVgaClassAdapter.transformSignal();
         samsungDisplayMonitor.display();
     }
 }

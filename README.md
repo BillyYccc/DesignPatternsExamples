@@ -51,4 +51,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### AdapterDemo
 适配器模式
+* classadapter 类适配器
+* objectadapter 对象适配器
 

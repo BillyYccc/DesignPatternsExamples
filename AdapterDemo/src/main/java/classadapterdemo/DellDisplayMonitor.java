@@ -6,14 +6,14 @@ package classadapterdemo;
  */
 
 public class DellDisplayMonitor {
-    private HdmiPort mHdmiPort;
+    private HdmiPort mHdmiOutputPort;
 
-    public void setHdmiOutputPort(HdmiPort hdmiPort) {
-        mHdmiPort = hdmiPort;
+    public void setHdmiOutputPort(HdmiPort hdmiOutputPort) {
+        mHdmiOutputPort = hdmiOutputPort;
     }
 
     public void display() {
-        if (mHdmiPort == null) {
+        if (mHdmiOutputPort == null) {
             return;
         }
         System.out.println("戴尔显示器收到HDMI信号，正常显示...");

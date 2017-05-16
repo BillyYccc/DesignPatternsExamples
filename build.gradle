@@ -1,18 +1,18 @@
-group 'com.billyyccc'
-version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
-apply plugin: 'idea'
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-repositories {
-    mavenCentral()
+allprojects {
+    group = 'com.billyyccc'
+    version = '1.0-SNAPSHOT'
 }
 
-dependencies {
-    testCompile("junit:junit:4.12") {
-        exclude group:'org.hamcrest', module:'hamcrest-core'
+subprojects{
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
     }
 }
+
+

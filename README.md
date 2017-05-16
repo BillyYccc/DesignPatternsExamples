@@ -8,15 +8,15 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 ***
 ### SingletonDemo
 [单例模式](http://billyyccc.com/2017/04/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%882%EF%BC%89%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FSINGLETON/)
-* com.billyyccc.singletondemo.EagerInitializationSingleton 饿汉式单例
-* com.billyyccc.singletondemo.LazyInitializationSingletonA 懒汉式单例，线程不安全
-* com.billyyccc.singletondemo.LazyInitializationSingletonB 改进过的懒汉式单例，线程安全
-* com.billyyccc.singletondemo.DoubleCheckedLockingSingleton 双重检查锁单例
-* com.billyyccc.singletondemo.EnumSingleton 枚举类型单例(可以直接序列化和反序列化)
-* com.billyyccc.singletondemo.BillPughSingleton 静态内部类单例
-* com.billyyccc.singletondemo.SerializeSingletonA 提供序列化接口的静态内部类单例，但是反序列化后异常
-* com.billyyccc.singletondemo.SerializeSingletonB 提供序列化接口的静态内部类单例，增加readResolve()方法后，可以对单例进行序列化操作
-* com.billyyccc.singletondemo.EnumMultiton 多例模式
+* EagerInitializationSingleton 饿汉式单例
+* LazyInitializationSingletonA 懒汉式单例，线程不安全
+* LazyInitializationSingletonB 改进过的懒汉式单例，线程安全
+* DoubleCheckedLockingSingleton 双重检查锁单例
+* EnumSingleton 枚举类型单例(可以直接序列化和反序列化)
+* BillPughSingleton 静态内部类单例
+* SerializeSingletonA 提供序列化接口的静态内部类单例，但是反序列化后异常
+* SerializeSingletonB 提供序列化接口的静态内部类单例，增加readResolve()方法后，可以对单例进行序列化操作
+* EnumMultiton 多例模式
 
 ### BuilderDemo
 [建造者模式](http://billyyccc.com/2017/04/30/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%883%EF%BC%89%EF%BC%9A%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8FBUILDER/)
@@ -53,4 +53,7 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [适配器模式](http://billyyccc.com/2017/05/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%888%EF%BC%89%EF%BC%9A%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8FADAPTER/)
 * classadapter 类适配器
 * objectadapter 对象适配器
+
+### BridgeDemo
+桥接模式
 

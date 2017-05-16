@@ -62,7 +62,7 @@ public class BridgeDemoTest {
     }
 
     @Test
-    public void SquareTest() {
+    public void squareTest() {
         //蓝色实线边框正方形
         System.out.println("开始绘制...蓝色实线边框正方形");
         Square blueSolidLineSquare = new Square(new Blue(), new SolidLineBorder());
@@ -107,7 +107,7 @@ public class BridgeDemoTest {
     }
 
     @Test
-    public void RoundTest() {
+    public void roundTest() {
         //蓝色实线边框圆形
         System.out.println("开始绘制...蓝色实线边框圆形");
         Round blueSolidLineRound = new Round(new Blue(), new SolidLineBorder());

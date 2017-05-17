@@ -17,13 +17,35 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.singletondemo;
+package com.billyyccc.compositedemo.transparentcompositepattern;
 
 /**
- * Created by Billy Yuan on 2017/4/28.
+ * Created by Billy Yuan on 2017/5/17.
  * Email: billy112487983@gmail.com
  */
 
-public enum EnumMultiton {
-    instanceA, instanceB, instanceC
+public class File extends AbstractFile {
+    public File(String name) {
+        super(name);
+    }
+
+    @Override
+    public void addAbstractFile(AbstractFile abstractFile) {
+        throw new UnsupportedOperationException("文件无法进行该操作");
+    }
+
+    @Override
+    public void removeAbstractFile(AbstractFile abstractFile) {
+        throw new UnsupportedOperationException("文件无法进行该操作");
+    }
+
+    @Override
+    public void revoveAllAbstractFiles() {
+        throw new UnsupportedOperationException("文件无法进行该操作");
+    }
+
+    @Override
+    public void ListAbstractFiles() {
+        System.out.print(getName());
+    }
 }

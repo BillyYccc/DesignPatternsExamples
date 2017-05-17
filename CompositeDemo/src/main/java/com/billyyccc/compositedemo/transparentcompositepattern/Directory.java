@@ -17,13 +17,46 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.singletondemo;
+package com.billyyccc.compositedemo.transparentcompositepattern;
+
+import java.util.Iterator;
 
 /**
- * Created by Billy Yuan on 2017/4/28.
+ * Created by Billy Yuan on 2017/5/17.
  * Email: billy112487983@gmail.com
  */
 
-public enum EnumMultiton {
-    instanceA, instanceB, instanceC
+public class Directory extends AbstractFile {
+    public Directory(String name) {
+        super(name);
+    }
+
+    @Override
+    public void addAbstractFile(AbstractFile abstractFile) {
+        files.add(abstractFile);
+    }
+
+    @Override
+    public void removeAbstractFile(AbstractFile abstractFile) {
+        files.remove(abstractFile);
+    }
+
+    @Override
+    public void revoveAllAbstractFiles() {
+        files.clear();
+    }
+
+    @Override
+    public void ListAbstractFiles() {
+        System.out.print(getName() + "{");
+        Iterator<AbstractFile> iterator = files.iterator();
+        while (iterator.hasNext()) {
+            AbstractFile abstractFile = iterator.next();
+            abstractFile.ListAbstractFiles();
+            if (iterator.hasNext()) {
+                System.out.print(",");
+            }
+        }
+        System.out.print("}");
+    }
 }

@@ -17,13 +17,38 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.singletondemo;
+package com.billyyccc.compositedemo.transparentcompositepattern;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Created by Billy Yuan on 2017/4/28.
+ * Created by Billy Yuan on 2017/5/17.
  * Email: billy112487983@gmail.com
  */
 
-public enum EnumMultiton {
-    instanceA, instanceB, instanceC
+public abstract class AbstractFile {
+    private String name;
+    protected List<AbstractFile> files = new ArrayList<>();
+
+    public AbstractFile(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract void addAbstractFile(AbstractFile abstractFile);
+
+    public abstract void removeAbstractFile(AbstractFile abstractFile);
+
+    public abstract void revoveAllAbstractFiles();
+
+    public abstract void ListAbstractFiles();
+
 }

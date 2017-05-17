@@ -65,6 +65,6 @@ public class SafeCompositePatternTest {
 
         picturesDirectory.addFile(pictureFile1);
 
-        userDirectory.ListAbstractFiles();
+        userDirectory.listAbstractFiles();
     }
 }

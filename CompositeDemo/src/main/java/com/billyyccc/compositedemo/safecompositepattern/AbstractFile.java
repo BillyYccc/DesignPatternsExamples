@@ -39,5 +39,5 @@ public abstract class AbstractFile {
         this.name = name;
     }
 
-    public abstract void ListAbstractFiles();
+    public abstract void listAbstractFiles();
 }

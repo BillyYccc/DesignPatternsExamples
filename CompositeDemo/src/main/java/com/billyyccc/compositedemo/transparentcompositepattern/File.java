@@ -45,7 +45,7 @@ public class File extends AbstractFile {
     }
 
     @Override
-    public void ListAbstractFiles() {
+    public void listAbstractFiles() {
         System.out.print(getName());
     }
 }

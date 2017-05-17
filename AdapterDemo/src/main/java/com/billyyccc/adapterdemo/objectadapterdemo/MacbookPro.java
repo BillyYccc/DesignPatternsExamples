@@ -26,10 +26,7 @@ package com.billyyccc.adapterdemo.objectadapterdemo;
 
 public class MacbookPro {
     private HdmiPort mHdmiPort;
-
-    public MacbookPro() {
-    }
-
+    
     public void setDigitalSignalOutputPort(HdmiPort hdmiPort) {
         mHdmiPort = hdmiPort;
     }

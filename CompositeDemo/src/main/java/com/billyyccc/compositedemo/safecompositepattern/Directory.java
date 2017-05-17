@@ -62,14 +62,14 @@ public class Directory extends AbstractFile {
     }
 
     @Override
-    public void ListAbstractFiles() {
+    public void listAbstractFiles() {
         System.out.print(getName() + "{");
         Iterator<Directory> directoryIterator = diretories.iterator();
         Iterator<File> fileIterator = files.iterator();
 
         while (directoryIterator.hasNext()) {
             Directory directory = directoryIterator.next();
-            directory.ListAbstractFiles();
+            directory.listAbstractFiles();
             if (directoryIterator.hasNext()) {
                 System.out.print(",");
             }
@@ -77,7 +77,7 @@ public class Directory extends AbstractFile {
 
         while (fileIterator.hasNext()) {
             File file = fileIterator.next();
-            file.ListAbstractFiles();
+            file.listAbstractFiles();
             if (fileIterator.hasNext()) {
                 System.out.print(",");
             }

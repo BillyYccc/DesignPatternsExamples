@@ -66,6 +66,6 @@ public class TransparentCompositePatternTest {
 
         picturesDirectory.addAbstractFile(pictureFile1);
 
-        userDirectory.ListAbstractFiles();
+        userDirectory.listAbstractFiles();
     }
 }

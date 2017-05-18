@@ -58,7 +58,7 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [桥接模式](http://billyyccc.com/2017/05/17/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%889%EF%BC%89%EF%BC%9A%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8FBRIDGE/)
 
 ### CompositeDemo
-组合模式
+[组合模式](http://billyyccc.com/2017/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8810%EF%BC%89%EF%BC%9A%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8FCOMPOSITE/)
 * safecompositepatter
 * transparentcompositepatter
 

@@ -22,7 +22,7 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [建造者模式](http://billyyccc.com/2017/04/30/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%883%EF%BC%89%EF%BC%9A%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8FBUILDER/)
 * builderTest1() 使用Director进行装配
 * builderTest2() 
-<br>builderTest3() 省略Director，直接使用builder进行装配
+  <br>builderTest3() 省略Director，直接使用builder进行装配
 
 ### FactoryMethodDemo
 [工厂方法模式](http://billyyccc.com/2017/05/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%884%EF%BC%89%EF%BC%9A%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95FACTORYMETHOD/)
@@ -39,8 +39,8 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 #### copy包里面是深拷贝跟浅拷贝的实现
 * deepcopy 深拷贝的三种实现
 1. Diary 对String进行深拷贝
-1. Bookshelf 对ArrayList进行深拷贝
-1. Magazine 通过序列化的方式进行深拷贝
+2. Bookshelf 对ArrayList进行深拷贝
+3. Magazine 通过序列化的方式进行深拷贝
 
 * shallowcopy 浅拷贝实现
 1. Newspaper 实现Cloneable接口进行浅拷贝
@@ -55,5 +55,10 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 * objectadapter 对象适配器
 
 ### BridgeDemo
-桥接模式
+[桥接模式](http://billyyccc.com/2017/05/17/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%889%EF%BC%89%EF%BC%9A%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8FBRIDGE/)
+
+### CompositeDemo
+组合模式
+* safecompositepatter
+* transparentcompositepatter
 

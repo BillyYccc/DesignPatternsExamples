@@ -29,60 +29,36 @@ import java.util.List;
  */
 
 public class Directory extends AbstractFile {
-    //TODO Use Iterator Pattern to refactor
-    private List<Directory> diretories = new ArrayList<>();
-    private List<File> files = new ArrayList<>();
+    protected List<AbstractFile> abstractFilesList = new ArrayList<>();
+
 
     public Directory(String name) {
         super(name);
     }
 
-    public void addDirectory(Directory directory) {
-        diretories.add(directory);
+    public void addAbstractFile(AbstractFile abstractFile) {
+        abstractFilesList.add(abstractFile);
     }
 
-    public void addFile(File file) {
-        files.add(file);
+    public void removeAbstractFile(AbstractFile abstractFile) {
+        abstractFilesList.remove(abstractFile);
     }
 
-    public void removeDirectory(Directory directory) {
-        diretories.remove(directory);
-    }
-
-    public void removeFile(File file) {
-        files.remove(file);
-    }
-
-    public void revoveAllDirectories() {
-        diretories.clear();
-    }
-
-    public void revoveAllFiles() {
-        files.clear();
+    public void removeAllFiles() {
+        abstractFilesList.clear();
     }
 
     @Override
     public void listAbstractFiles() {
         System.out.print(getName() + "{");
-        Iterator<Directory> directoryIterator = diretories.iterator();
-        Iterator<File> fileIterator = files.iterator();
-
-        while (directoryIterator.hasNext()) {
-            Directory directory = directoryIterator.next();
-            directory.listAbstractFiles();
-            if (directoryIterator.hasNext()) {
-                System.out.print(",");
+        Iterator<AbstractFile> iterator = abstractFilesList.iterator();
+        while (iterator.hasNext()) {
+            AbstractFile abstractFile = iterator.next();
+            abstractFile.listAbstractFiles();
+            if (iterator.hasNext()) {
+                System.out.print(", ");
             }
         }
-
-        while (fileIterator.hasNext()) {
-            File file = fileIterator.next();
-            file.listAbstractFiles();
-            if (fileIterator.hasNext()) {
-                System.out.print(",");
-            }
-        }
-
         System.out.print("}");
     }
 }

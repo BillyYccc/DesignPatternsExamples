@@ -49,21 +49,21 @@ public class SafeCompositePatternTest {
 
         File pictureFile1 = new File("the Great Wall.jpg");
 
-        userDirectory.addDirectory(administratorDirectory);
-        userDirectory.addDirectory(guestDirectory);
+        userDirectory.addAbstractFile(administratorDirectory);
+        userDirectory.addAbstractFile(guestDirectory);
 
-        administratorDirectory.addDirectory(videoDirectory);
-        administratorDirectory.addDirectory(musicDirectory);
-        administratorDirectory.addDirectory(picturesDirectory);
-        administratorDirectory.addFile(logFile);
+        administratorDirectory.addAbstractFile(videoDirectory);
+        administratorDirectory.addAbstractFile(musicDirectory);
+        administratorDirectory.addAbstractFile(picturesDirectory);
+        administratorDirectory.addAbstractFile(logFile);
 
-        videoDirectory.addFile(videoFile1);
-        videoDirectory.addFile(videoFile2);
+        videoDirectory.addAbstractFile(videoFile1);
+        videoDirectory.addAbstractFile(videoFile2);
 
-        musicDirectory.addFile(musicFile1);
-        musicDirectory.addFile(musicFile2);
+        musicDirectory.addAbstractFile(musicFile1);
+        musicDirectory.addAbstractFile(musicFile2);
 
-        picturesDirectory.addFile(pictureFile1);
+        picturesDirectory.addAbstractFile(pictureFile1);
 
         userDirectory.listAbstractFiles();
     }

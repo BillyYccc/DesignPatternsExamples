@@ -62,3 +62,5 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 * safecompositepatter
 * transparentcompositepatter
 
+### DecoratorDemo
+[装饰模式](http://billyyccc.com/2017/05/22/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8811%EF%BC%89%EF%BC%9A%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8FDECORATOR/)

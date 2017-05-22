@@ -32,10 +32,10 @@ public class RedShapeDecorator extends ShapeDecorator {
     @Override
     public void draw() {
         decoratedShape.draw();
-        setBackgroundRed(decoratedShape);
+        setBackgroundRed();
     }
 
-    private void setBackgroundRed(Shape decoratedShape) {
+    private void setBackgroundRed() {
         System.out.println("Background Color : Red");
     }
 }

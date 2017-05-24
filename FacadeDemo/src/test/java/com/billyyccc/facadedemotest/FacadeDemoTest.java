@@ -16,7 +16,7 @@ import static org.junit.Assert.assertThat;
 
 public class FacadeDemoTest {
     @Test
-    public void OrderABookTest() {
+    public void orderBookTest() {
         OrderService orderService = new OrderService(new WarehouseService(), new ShippingService(), new PaymentService());
         boolean orderResult = orderService.order(100001, "Thinking In Java");
         assertThat(orderResult, is(true));

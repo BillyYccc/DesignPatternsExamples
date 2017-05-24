@@ -25,17 +25,16 @@ public class OrderService implements OrderServiceFacade {
     public boolean order(int productId, String productName) {
         boolean isOrderSuccessful = false;
         Product product = new Product(productId, productName);
-        if (warehouseService.isAvailable(product)) {
-            if (paymentService.isPaymentSuccessful()) {
-                shippingService.shipProduct(product);
-                System.out.println("ProductName : "
-                        + product.getProductName()
-                        + ", ProductId : "
-                        + product.getProductId()
-                        + ", is shipped...");
-                System.out.println("Order is successful...");
-                isOrderSuccessful = true;
-            }
+        if (warehouseService.isAvailable(product) && paymentService.isPaymentSuccessful()) {
+            shippingService.shipProduct(product);
+            System.out.println("ProductName : "
+                    + product.getProductName()
+                    + ", ProductId : "
+                    + product.getProductId()
+                    + ", is shipped...");
+            System.out.println("Order is successful...");
+            isOrderSuccessful = true;
+
         }
         return isOrderSuccessful;
     }

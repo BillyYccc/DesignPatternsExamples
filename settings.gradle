@@ -11,6 +11,7 @@ include 'BridgeDemo'
 include 'CompositeDemo'
 include 'DecoratorDemo'
 include 'FacadeDemo'
+include 'FlyweightDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

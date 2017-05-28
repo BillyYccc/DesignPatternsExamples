@@ -16,7 +16,10 @@ import static org.junit.Assert.assertThat;
 public class FlyweightDemoTest {
     @Test
     public void creepsTest() {
+        //小兵工厂
         CreepsFactory creepsFactory = CreepsFactory.getInstance();
+
+        //通过小兵工厂获取实例
         MeleeCreep direMeleeCreepOnTopLane = creepsFactory.getCreeps("Dire");
         MeleeCreep direMeleeCreepOnMiddleLane = creepsFactory.getCreeps("Dire");
         MeleeCreep direMeleeCreepOnBottomLane = creepsFactory.getCreeps("Dire");
@@ -24,6 +27,7 @@ public class FlyweightDemoTest {
         MeleeCreep radiantMeleeCreepOnMiddleLane = creepsFactory.getCreeps("Radiant");
         MeleeCreep radiantMeleeCreepOnBottomLane = creepsFactory.getCreeps("Radiant");
 
+        //小兵进行移动
         System.out.println("上路夜魇小兵移动");
         direMeleeCreepOnTopLane.move(100, 100, 0, 100);
         System.out.println("中路夜魇小兵移动");
@@ -37,6 +41,7 @@ public class FlyweightDemoTest {
         System.out.println("下路天辉小兵移动");
         radiantMeleeCreepOnBottomLane.move(0, 0, 100, 0);
 
+        //工厂只维护两个小兵对象
         assertThat(direMeleeCreepOnTopLane.hashCode(),
                 both(is(direMeleeCreepOnMiddleLane.hashCode()))
                         .and(is(direMeleeCreepOnBottomLane.hashCode())));

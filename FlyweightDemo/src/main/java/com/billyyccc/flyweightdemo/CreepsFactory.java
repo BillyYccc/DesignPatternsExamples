@@ -23,15 +23,13 @@ public class CreepsFactory {
         switch (key) {
             case "Radiant":
                 meleeCreep = new RadiantMeleeCreep();
-                meleeCreep.health = 550;
-                meleeCreep.moveSpeed = 325;
+                meleeCreep.sightRange = 750;
                 meleeCreep.attackRange = 100;
                 meleeCreep.experience = 40;
                 break;
             case "Dire":
                 meleeCreep = new DireMeleeCreep();
-                meleeCreep.health = 550;
-                meleeCreep.moveSpeed = 325;
+                meleeCreep.sightRange = 750;
                 meleeCreep.attackRange = 100;
                 meleeCreep.experience = 40;
                 break;

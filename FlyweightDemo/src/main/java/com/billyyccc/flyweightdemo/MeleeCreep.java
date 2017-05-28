@@ -10,8 +10,7 @@ package com.billyyccc.flyweightdemo;
  */
 public abstract class MeleeCreep {
     /*内部状态，存在Flyweight对象中并且共享*/
-    protected int health;
-    protected int moveSpeed;
+    protected int sightRange;
     protected int attackRange;
     protected int experience;
 

@@ -67,3 +67,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### FacadeDemo
 [外观模式](http://billyyccc.com/2017/05/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8812%EF%BC%89%EF%BC%9A%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8FFACADE/)
+
+### FlyweightDemo
+享元模式

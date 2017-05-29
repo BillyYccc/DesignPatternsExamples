@@ -70,3 +70,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### FlyweightDemo
 [享元模式](http://billyyccc.com/2017/05/29/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8813%EF%BC%89%EF%BC%9A%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8FFLYWEIGHT/)
+
+### ProxyDemo
+代理模式

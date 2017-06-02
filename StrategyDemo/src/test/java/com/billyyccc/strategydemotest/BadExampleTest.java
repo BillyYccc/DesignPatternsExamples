@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 
 public class BadExampleTest {
-    BadStrategy badStrategy = new BadStrategy();
+    private BadStrategy badStrategy = new BadStrategy();
 
     @Test
     public void badStrategyATest() {

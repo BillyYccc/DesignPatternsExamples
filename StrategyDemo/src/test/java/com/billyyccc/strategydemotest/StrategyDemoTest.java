@@ -29,21 +29,21 @@ import org.junit.Test;
 
 public class StrategyDemoTest {
     @Test
-    public void DiscountStrategyATest() {
+    public void discountStrategyATest() {
         DiscountStrategy strategyA = new BookDiscountStrategyA();
         Discount discount = new Discount(strategyA);
         discount.discountBook();
     }
 
     @Test
-    public void DiscountStrategyBTest() {
+    public void discountStrategyBTest() {
         DiscountStrategy strategyB = new BookDiscountStrategyB();
         Discount discount = new Discount(strategyB);
         discount.discountBook();
     }
 
     @Test
-    public void DiscountStrategyCTest() {
+    public void discountStrategyCTest() {
         DiscountStrategy strategyC = new BookDiscountStrategyC();
         Discount discount = new Discount(strategyC);
         discount.discountBook();

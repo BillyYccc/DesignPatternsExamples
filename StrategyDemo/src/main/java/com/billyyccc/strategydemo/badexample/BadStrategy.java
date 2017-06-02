@@ -1,10 +1,5 @@
 package com.billyyccc.strategydemo.badexample;
 
-import com.billyyccc.strategydemo.BookDiscountStrategyA;
-import com.billyyccc.strategydemo.BookDiscountStrategyB;
-import com.billyyccc.strategydemo.BookDiscountStrategyC;
-import com.billyyccc.strategydemo.DiscountStrategy;
-
 /**
  * Created by Billy Yuan on 2017/6/2.
  * Email: billy112487983@gmail.com
@@ -16,16 +11,15 @@ public class BadStrategy {
     public static final int STRATEGY_C = 3;
 
     public void applyStrategy(int type) {
-        DiscountStrategy discountStrategy;
         if (type == STRATEGY_A) {
-            discountStrategy = new BookDiscountStrategyA();
-            discountStrategy.apply();
+            System.out.println("apply BookDiscountStrategyA...");
+            System.out.println("全场图书打八折...");
         } else if (type == STRATEGY_B) {
-            discountStrategy = new BookDiscountStrategyB();
-            discountStrategy.apply();
+            System.out.println("apply BookDiscountStrategyB...");
+            System.out.println("全场图书打五折...");
         } else if (type == STRATEGY_C) {
-            discountStrategy = new BookDiscountStrategyC();
-            discountStrategy.apply();
+            System.out.println("apply BookDiscountStrategyC...");
+            System.out.println("计算机类图书满200打六折");
         }
     }
 }

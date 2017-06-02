@@ -14,6 +14,7 @@ include 'FacadeDemo'
 include 'FlyweightDemo'
 include 'ProxyDemo'
 include 'StrategyDemo'
+include 'StateDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

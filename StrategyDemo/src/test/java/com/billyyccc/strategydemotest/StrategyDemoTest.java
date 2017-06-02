@@ -17,13 +17,35 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.strategydemo;
+package com.billyyccc.strategydemotest;
+
+import com.billyyccc.strategydemo.*;
+import org.junit.Test;
 
 /**
  * Created by Billy Yuan on 2017/6/1.
  * Email: billy112487983@gmail.com
  */
 
-public class Strategy {
+public class StrategyDemoTest {
+    @Test
+    public void DiscountStrategyATest() {
+        DiscountStrategy strategyA = new BookDiscountStrategyA();
+        Discount discount = new Discount(strategyA);
+        discount.discountBook();
+    }
 
+    @Test
+    public void DiscountStrategyBTest() {
+        DiscountStrategy strategyB = new BookDiscountStrategyB();
+        Discount discount = new Discount(strategyB);
+        discount.discountBook();
+    }
+
+    @Test
+    public void DiscountStrategyCTest() {
+        DiscountStrategy strategyC = new BookDiscountStrategyC();
+        Discount discount = new Discount(strategyC);
+        discount.discountBook();
+    }
 }

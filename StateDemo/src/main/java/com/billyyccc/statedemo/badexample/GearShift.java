@@ -57,7 +57,7 @@ public class GearShift {
         }
     }
 
-    public void downShift(int newGearState) {
+    public void downShift() {
         if (gearState == REVERSE_GEAR) {
             throw new UnsupportedOperationException("不支持的降档操作...");
         }

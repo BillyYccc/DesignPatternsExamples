@@ -74,6 +74,10 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 ### ProxyDemo
 [代理模式](http://billyyccc.com/2017/05/31/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8814%EF%BC%89%EF%BC%9A%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8FPROXY/)
 
+## 创建型模式 Creational Pattern
+
+***
+
 ### StrategyDemo
 [策略模式](http://billyyccc.com/2017/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8815%EF%BC%89%EF%BC%9A%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8FSTRATEGY/)
 

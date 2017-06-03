@@ -5,7 +5,7 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BillyYccc/DesignPatternsExamples/blob/master/LICENSE)
 
 ## 创建型模式 Creational Pattern
-***
+
 ### SingletonDemo
 [单例模式](http://billyyccc.com/2017/04/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%882%EF%BC%89%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FSINGLETON/)
 * EagerInitializationSingleton 饿汉式单例
@@ -47,8 +47,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ## 结构型模式 Structural Pattern
 
-***
-
 ### AdapterDemo
 [适配器模式](http://billyyccc.com/2017/05/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%888%EF%BC%89%EF%BC%9A%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8FADAPTER/)
 * classadapter 类适配器
@@ -73,6 +71,8 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### ProxyDemo
 [代理模式](http://billyyccc.com/2017/05/31/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8814%EF%BC%89%EF%BC%9A%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8FPROXY/)
+
+## 创建型模式 Creational Pattern
 
 ### StrategyDemo
 [策略模式](http://billyyccc.com/2017/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8815%EF%BC%89%EF%BC%9A%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8FSTRATEGY/)

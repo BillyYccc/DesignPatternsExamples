@@ -34,10 +34,12 @@ public class GearShift {
         gearState = new NeutralGearState(this);
     }
 
+    /*升档操作*/
     public void upShift() {
         gearState.doUpShift();
     }
 
+    /*降档操作*/
     public void downShift() {
         gearState.doDownShift();
     }

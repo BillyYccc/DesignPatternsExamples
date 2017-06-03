@@ -5,7 +5,7 @@ package com.billyyccc.statedemo.badexample;
  * Email: billy112487983@gmail.com
  */
 
-/*假设变速器一共有空挡，1-5前进档和倒挡，升档操作upShift，退档操作downShift*/
+/*F1变速器一共有空挡，1-7前进档和倒挡，升档操作upShift，降档操作downShift*/
 public class GearShift {
     private static final int NEUTRAL_GEAR = 0;
     private static final int FIRST_FORWARD_GEAR = 1;

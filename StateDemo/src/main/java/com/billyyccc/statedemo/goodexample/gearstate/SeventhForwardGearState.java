@@ -27,21 +27,14 @@ import com.billyyccc.statedemo.goodexample.GearShift;
  */
 
 public class SeventhForwardGearState extends GearState {
-    private GearShift gearShift;
-
-    SeventhForwardGearState(GearShift gearShift) {
-        super(gearShift);
-        this.gearShift = gearShift;
-    }
-
     @Override
-    public void doUpShift() {
+    public void doUpShift(GearShift gearShift) {
         throw new UnsupportedOperationException("七档不能升档操作...");
     }
 
     @Override
-    public void doDownShift() {
-        gearShift.gearState = new SixthForwardGearState(gearShift);
+    public void doDownShift(GearShift gearShift) {
+        gearShift.gearState = new SixthForwardGearState();
         System.out.println("从七挡挂入六挡...");
     }
 }

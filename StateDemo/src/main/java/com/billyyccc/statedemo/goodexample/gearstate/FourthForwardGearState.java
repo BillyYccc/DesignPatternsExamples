@@ -27,22 +27,15 @@ import com.billyyccc.statedemo.goodexample.GearShift;
  */
 
 public class FourthForwardGearState extends GearState {
-    private GearShift gearShift;
-
-    FourthForwardGearState(GearShift gearShift) {
-        super(gearShift);
-        this.gearShift = gearShift;
-    }
-
     @Override
-    public void doUpShift() {
-        gearShift.gearState = new FifthForwardGearState(gearShift);
+    public void doUpShift(GearShift gearShift) {
+        gearShift.gearState = new FifthForwardGearState();
         System.out.println("从四挡挂入五挡...");
     }
 
     @Override
-    public void doDownShift() {
-        gearShift.gearState = new ThirdForwardGearState(gearShift);
+    public void doDownShift(GearShift gearShift) {
+        gearShift.gearState = new ThirdForwardGearState();
         System.out.println("从四挡挂入三挡...");
     }
 }

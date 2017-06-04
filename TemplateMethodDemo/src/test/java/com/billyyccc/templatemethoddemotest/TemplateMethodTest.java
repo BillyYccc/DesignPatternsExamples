@@ -29,12 +29,14 @@ import org.junit.Test;
  */
 
 public class TemplateMethodTest {
+    /*安装U2515H*/
     @Test
     public void installDellU2515HTest() {
         InstallDellU2515H installDellU2515H = new InstallDellU2515H();
         installDellU2515H.install();
     }
 
+    /*安装U2417H*/
     @Test
     public void installDellU2417HTest() {
         InstallDellU2417H installDellU2417H = new InstallDellU2417H();

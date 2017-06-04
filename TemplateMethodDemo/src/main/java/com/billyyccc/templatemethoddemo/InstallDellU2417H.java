@@ -25,7 +25,7 @@ package com.billyyccc.templatemethoddemo;
  */
 
 /*安装戴尔U2417H显示器*/
-public class InstallDellU2417H implements InstallDellMonitor{
+public class InstallDellU2417H implements InstallDellMonitor {
     @Override
     public void attachStand() {
         System.out.println("安装U2417H显示器底座，装上屏幕...");

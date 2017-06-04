@@ -24,6 +24,7 @@ package com.billyyccc.templatemethoddemo;
  * Email: billy112487983@gmail.com
  */
 
+/*安装戴尔U2417H显示器*/
 public class InstallDellU2417H implements InstallDellMonitor{
     @Override
     public void attachStand() {

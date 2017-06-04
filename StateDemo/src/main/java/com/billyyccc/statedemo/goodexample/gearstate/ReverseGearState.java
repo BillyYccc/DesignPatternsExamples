@@ -27,21 +27,14 @@ import com.billyyccc.statedemo.goodexample.GearShift;
  */
 
 public class ReverseGearState extends GearState {
-    private GearShift gearShift;
-
-    ReverseGearState(GearShift gearShift) {
-        super(gearShift);
-        this.gearShift = gearShift;
-    }
-
     @Override
-    public void doUpShift() {
-        gearShift.gearState = new NeutralGearState(gearShift);
+    public void doUpShift(GearShift gearShift) {
+        gearShift.gearState = new NeutralGearState();
         System.out.println("从倒车档挂入空挡...");
     }
 
     @Override
-    public void doDownShift() {
+    public void doDownShift(GearShift gearShift) {
         throw new UnsupportedOperationException("倒车档不能降档...");
     }
 }

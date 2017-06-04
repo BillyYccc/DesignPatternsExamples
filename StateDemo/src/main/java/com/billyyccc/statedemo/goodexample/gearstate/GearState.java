@@ -27,13 +27,7 @@ import com.billyyccc.statedemo.goodexample.GearShift;
  */
 
 public abstract class GearState {
-    private GearShift gearShift;
+    public abstract void doUpShift(GearShift gearShift);
 
-    GearState(GearShift gearShift) {
-        this.gearShift = gearShift;
-    }
-
-    public abstract void doUpShift();
-
-    public abstract void doDownShift();
+    public abstract void doDownShift(GearShift gearShift);
 }

@@ -28,9 +28,15 @@ package com.billyyccc.templatemethoddemo;
 interface InstallDellMonitor {
     /*给出默认的安装顺序*/
     default void install() {
+        unwrapPacking();
         attachStand();
         connectMonitor();
         setupInSystem();
+    }
+
+    /*拆开包装*/
+    default void unwrapPacking() {
+        System.out.println("拆开纸箱包装...");
     }
 
     /*将屏幕安装到显示器底座上*/

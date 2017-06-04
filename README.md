@@ -79,3 +79,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### StateDemo
 [状态模式](http://billyyccc.com/2017/06/03/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8816%EF%BC%89%EF%BC%9A%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8FSTATE/)
+
+### TemplateMethodDemo
+[模板方法模式](http://billyyccc.com/2017/06/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8817%EF%BC%89%EF%BC%9A%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95TEMPLATEMETHOD/)

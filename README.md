@@ -82,3 +82,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### TemplateMethodDemo
 [模板方法模式](http://billyyccc.com/2017/06/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8817%EF%BC%89%EF%BC%9A%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95TEMPLATEMETHOD/)
+
+### CommandDemo
+命令模式

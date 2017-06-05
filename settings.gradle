@@ -16,6 +16,7 @@ include 'ProxyDemo'
 include 'StrategyDemo'
 include 'StateDemo'
 include 'TemplateMethodDemo'
+include 'CommandDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

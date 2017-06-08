@@ -29,7 +29,7 @@ import java.util.List;
 
 /* Caretaker in pattern */
 public class ChessGameCaretaker {
-    public List<ChessGameMemento> mementoList = new ArrayList<>();
+    private List<ChessGameMemento> mementoList = new ArrayList<>();
 
     //step表示第几步
     public void addMemento(int step, ChessGameMemento chessGameMemento) {

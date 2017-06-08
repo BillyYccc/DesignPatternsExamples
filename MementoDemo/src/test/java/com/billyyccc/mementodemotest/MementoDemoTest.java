@@ -57,7 +57,6 @@ public class MementoDemoTest {
         System.out.println("-----系统保存完毕-----");
         chessGame.showGameDetails();
 
-
         //黑棋走第二步
         System.out.println("黑棋走第二步...");
         chessGame.getChessBoard().setColumnOfBlackKing('d');
@@ -67,7 +66,6 @@ public class MementoDemoTest {
         chessGameCaretaker.addMemento(2, chessGame.saveGame());
         System.out.println("-----系统保存完毕-----");
         chessGame.showGameDetails();
-
 
         //白棋走第三步
         System.out.println("白棋走第三步...");
@@ -79,9 +77,9 @@ public class MementoDemoTest {
         System.out.println("-----系统保存完毕-----");
         chessGame.showGameDetails();
 
-        //黑棋悔棋，回到第二步
+        //黑棋悔棋，回到第二步之前
         System.out.println("-----黑棋要悔棋-----");
-        chessGame.restoreGame(chessGameCaretaker.getMemento(2));
+        chessGame.restoreGame(chessGameCaretaker.getMemento(1));
         System.out.println("-----黑棋悔棋成功-----");
         chessGame.showGameDetails();
     }

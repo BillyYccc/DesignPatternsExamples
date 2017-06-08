@@ -30,7 +30,7 @@ public class ChessGame {
 
     public ChessGame() {
         //初始化棋盘
-        this.chessBoard = new ChessBoard();
+        setChessBoard(new ChessBoard());
     }
 
     public ChessBoard getChessBoard() {
@@ -42,8 +42,8 @@ public class ChessGame {
     }
 
     //保存比赛
-    public ChessGameMemento saveGame() {
-        return new ChessGameMemento(this.chessBoard);
+    public ChessGameMemento saveGame() throws CloneNotSupportedException {
+        return new ChessGameMemento(chessBoard.clone());
     }
 
     //恢复比赛

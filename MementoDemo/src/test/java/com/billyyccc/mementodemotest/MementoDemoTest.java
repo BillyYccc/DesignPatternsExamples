@@ -30,7 +30,7 @@ import org.junit.Test;
 
 public class MementoDemoTest {
     @Test
-    public void mementoDemoTest() {
+    public void mementoDemoTest() throws CloneNotSupportedException {
         //新开一局比赛
         ChessGame chessGame = new ChessGame();
 
@@ -42,6 +42,11 @@ public class MementoDemoTest {
 
         System.out.println("-----开始比赛----");
 
+        System.out.println("-----系统自动保存-----");
+        chessGameCaretaker.addMemento(0, chessGame.saveGame());
+        System.out.println("-----系统保存完毕-----");
+        chessGame.showGameDetails();
+
         //白棋走第一步
         System.out.println("白棋先走第一步...");
         chessGame.getChessBoard().setColumnOfWhiteKing('f');
@@ -51,6 +56,7 @@ public class MementoDemoTest {
         chessGameCaretaker.addMemento(1, chessGame.saveGame());
         System.out.println("-----系统保存完毕-----");
         chessGame.showGameDetails();
+
 
         //黑棋走第二步
         System.out.println("黑棋走第二步...");
@@ -62,11 +68,12 @@ public class MementoDemoTest {
         System.out.println("-----系统保存完毕-----");
         chessGame.showGameDetails();
 
+
         //白棋走第三步
         System.out.println("白棋走第三步...");
         chessGame.getChessBoard().setColumnOfWhiteKing('f');
         chessGame.getChessBoard().setRowOfWhiteKing(3);
-        System.out.println("黑棋走完了...");
+        System.out.println("白棋走完了...");
         System.out.println("-----系统自动保存-----");
         chessGameCaretaker.addMemento(3, chessGame.saveGame());
         System.out.println("-----系统保存完毕-----");

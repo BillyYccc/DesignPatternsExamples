@@ -31,16 +31,13 @@ import java.util.List;
 public class ChessGameCaretaker {
     public List<ChessGameMemento> mementoList = new ArrayList<>();
 
-    //TODO 恢复时BUG未解决
-    
     //step表示第几步
     public void addMemento(int step, ChessGameMemento chessGameMemento) {
-        mementoList.add(step - 1, chessGameMemento);
-
+        mementoList.add(step, chessGameMemento);
     }
 
-    public ChessGameMemento getMemento(int step) {
-        return mementoList.get(step - 1);
+    public ChessGameMemento getMemento(int i) {
+        return mementoList.get(i);
     }
 
 }

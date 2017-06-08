@@ -25,7 +25,7 @@ package com.billyyccc.mementodemo;
  */
 
 /* 国际象棋中棋子的棋局*/
-public class ChessBoard {
+public class ChessBoard implements Cloneable {
     //代码太多进行省略，只显示王的位置
     private int rowOfBlackKing;
     private char columnOfBlackKing;
@@ -74,5 +74,10 @@ public class ChessBoard {
 
     public void setColumnOfWhiteKing(char columnOfWhiteKing) {
         this.columnOfWhiteKing = columnOfWhiteKing;
+    }
+
+    @Override
+    protected ChessBoard clone() throws CloneNotSupportedException {
+        return (ChessBoard) super.clone();
     }
 }

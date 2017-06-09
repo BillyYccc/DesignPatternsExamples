@@ -17,9 +17,9 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.chainofresponsibilitydemo.Developer;
+package com.billyyccc.chainofresponsibilitydemo.developer;
 
-import com.billyyccc.chainofresponsibilitydemo.Request.Request;
+import com.billyyccc.chainofresponsibilitydemo.request.Request;
 
 /**
  * Created by Billy Yuan on 2017/6/9.

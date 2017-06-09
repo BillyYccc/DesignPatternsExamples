@@ -17,24 +17,19 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.chainofresponsibilitydemo.Request;
+package com.billyyccc.chainofresponsibilitydemo.request;
 
 /**
  * Created by Billy Yuan on 2017/6/9.
  * Email: billy112487983@gmail.com
  */
 
-public class EasyRequest extends Request {
+/* 抽象的请求类 */
+public abstract class Request {
 
-    private static final int EASY_LEVEL = 1;
+    //请求具体的内容
+    public abstract String getProblemContent();
 
-    @Override
-    public String getProblemContent() {
-        return "简单的问题描述：………………";
-    }
-
-    @Override
-    public int getLevel() {
-        return EASY_LEVEL;
-    }
+    //获取当前问题的层级
+    public abstract int getLevel();
 }

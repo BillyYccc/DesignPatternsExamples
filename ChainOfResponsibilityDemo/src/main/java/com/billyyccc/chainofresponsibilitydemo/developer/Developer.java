@@ -17,24 +17,44 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.chainofresponsibilitydemo.Request;
+package com.billyyccc.chainofresponsibilitydemo.developer;
+
+import com.billyyccc.chainofresponsibilitydemo.request.Request;
 
 /**
  * Created by Billy Yuan on 2017/6/9.
  * Email: billy112487983@gmail.com
  */
 
-public class VeryHardRequest extends Request {
+/* 抽象的工程师类，对应模式中的Handler */
+public abstract class Developer {
+    protected Developer nextDeveloper;
 
-    private static final int VERY_HARD_LEVEL = 3;
-
-    @Override
-    public String getProblemContent() {
-        return "相当棘手的问题描述：………………";
+    public void setNextDeveloper(Developer developer) {
+        nextDeveloper = developer;
     }
 
-    @Override
-    public int getLevel() {
-        return VERY_HARD_LEVEL;
+    //处理请求的判断逻辑
+    public final void handleRequest(Request request) {
+        if (getLevel() >= request.getLevel()) {
+            //如果层级一致交给该工程师来处理
+            handle(request);
+        } else {
+            //否则交给下一级来处理
+            if (nextDeveloper != null) {
+                System.out.println("当前工程师无法解决，交给下一级工程师解决...");
+                nextDeveloper.handleRequest(request);
+            } else {
+                //如果都不能处理
+                System.out.println("所有工程师都不能处理该问题");
+            }
+        }
+
     }
+
+    //当前工程师能处理的层级
+    public abstract int getLevel();
+
+    //具体的处理方法
+    public abstract void handle(Request request);
 }

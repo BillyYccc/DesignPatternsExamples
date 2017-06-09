@@ -17,19 +17,24 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.chainofresponsibilitydemo.Request;
+package com.billyyccc.chainofresponsibilitydemo.request;
 
 /**
  * Created by Billy Yuan on 2017/6/9.
  * Email: billy112487983@gmail.com
  */
 
-/* 抽象的请求类 */
-public abstract class Request {
+public class HardRequest extends Request {
 
-    //请求具体的内容
-    public abstract String getProblemContent();
+    private static final int HARD_LEVEL = 2;
 
-    //获取当前问题的层级
-    public abstract int getLevel();
+    @Override
+    public String getProblemContent() {
+        return "比较困难的问题描述：………………";
+    }
+
+    @Override
+    public int getLevel() {
+        return HARD_LEVEL;
+    }
 }

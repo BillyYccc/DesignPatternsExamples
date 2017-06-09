@@ -19,14 +19,14 @@
 
 package com.billyyccc.chainofresponsibilitydemotest;
 
-import com.billyyccc.chainofresponsibilitydemo.Developer.AssociateDeveloper;
-import com.billyyccc.chainofresponsibilitydemo.Developer.Developer;
-import com.billyyccc.chainofresponsibilitydemo.Developer.ExpertDeveloper;
-import com.billyyccc.chainofresponsibilitydemo.Developer.SeniorDeveloper;
-import com.billyyccc.chainofresponsibilitydemo.Request.EasyRequest;
-import com.billyyccc.chainofresponsibilitydemo.Request.HardRequest;
-import com.billyyccc.chainofresponsibilitydemo.Request.Request;
-import com.billyyccc.chainofresponsibilitydemo.Request.VeryHardRequest;
+import com.billyyccc.chainofresponsibilitydemo.developer.AssociateDeveloper;
+import com.billyyccc.chainofresponsibilitydemo.developer.Developer;
+import com.billyyccc.chainofresponsibilitydemo.developer.ExpertDeveloper;
+import com.billyyccc.chainofresponsibilitydemo.developer.SeniorDeveloper;
+import com.billyyccc.chainofresponsibilitydemo.request.EasyRequest;
+import com.billyyccc.chainofresponsibilitydemo.request.HardRequest;
+import com.billyyccc.chainofresponsibilitydemo.request.Request;
+import com.billyyccc.chainofresponsibilitydemo.request.VeryHardRequest;
 import org.junit.Test;
 
 /**
@@ -36,7 +36,7 @@ import org.junit.Test;
 
 public class ChainOfResponsibilityDemoTest {
     @Test
-    public void DevelopersHandleRequests() {
+    public void developersHandleRequests() {
         System.out.println("-----A公司有三个级别的工程师-----");
         //初级工程师
         Developer developerC = new AssociateDeveloper();

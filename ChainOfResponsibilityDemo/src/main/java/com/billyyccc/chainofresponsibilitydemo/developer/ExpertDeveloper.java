@@ -17,24 +17,28 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.billyyccc.chainofresponsibilitydemo.Request;
+package com.billyyccc.chainofresponsibilitydemo.developer;
+
+import com.billyyccc.chainofresponsibilitydemo.request.Request;
 
 /**
  * Created by Billy Yuan on 2017/6/9.
  * Email: billy112487983@gmail.com
  */
 
-public class HardRequest extends Request {
+/* 领域专家，ConcreteHandler in pattern */
+public class ExpertDeveloper extends Developer {
 
-    private static final int HARD_LEVEL = 2;
-
-    @Override
-    public String getProblemContent() {
-        return "比较困难的问题描述：………………";
-    }
+    public static final int VERY_HARD_LEVEL = 3;
 
     @Override
     public int getLevel() {
-        return HARD_LEVEL;
+        return VERY_HARD_LEVEL;
+    }
+
+    @Override
+    public void handle(Request request) {
+        System.out.println(request.getProblemContent());
+        System.out.println("领域专家已经解决相当棘手的问题...");
     }
 }

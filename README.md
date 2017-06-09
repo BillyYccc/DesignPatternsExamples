@@ -88,3 +88,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 ### MementoDemo
 [备忘录模式](http://billyyccc.com/2017/06/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8819%EF%BC%89%EF%BC%9A%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8FMEMENTO/)
+
+### ChainOfResponsibilityDemo
+职责链模式

@@ -18,6 +18,7 @@ include 'StateDemo'
 include 'TemplateMethodDemo'
 include 'CommandDemo'
 include 'MementoDemo'
+include 'ChainOfResponsibilityDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

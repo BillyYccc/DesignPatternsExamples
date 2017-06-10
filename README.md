@@ -1,8 +1,8 @@
 # DesignPatternsExamples
 Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%881%EF%BC%89/),reference to [*Design Patterns: Elements of Reusable Object-Oriented Software*](https://www.goodreads.com/book/show/85009.Design_Patterns),the project is built based on Gradle and Intellij IDEA 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7acbea57b799470ea843b801e7b8c13e)](https://www.codacy.com/app/BillyYccc/DesignPatternsExamples?utm_source=github.com&utm_medium=referral&utm_content=BillyYccc/DesignPatternsExamples&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/BillyYccc/DesignPatternsExamples.svg?branch=master)](https://travis-ci.org/BillyYccc/DesignPatternsExamples)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7acbea57b799470ea843b801e7b8c13e)](https://www.codacy.com/app/BillyYccc/DesignPatternsExamples?utm_source=github.com&utm_medium=referral&utm_content=BillyYccc/DesignPatternsExamples&utm_campaign=badger)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BillyYccc/DesignPatternsExamples/blob/master/LICENSE)
 
 ## 创建型模式 Creational Pattern

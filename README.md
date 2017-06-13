@@ -191,6 +191,6 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 
 > Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
-[观察者模式]()
+[观察者模式](http://billyyccc.com/2017/06/13/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8821%EF%BC%89%EF%BC%9A%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8FOBSERVER/)
 
 > 定义对象间的一种一对多的依赖关系,当一个对象的状态发生改变时, 所有依赖于它的对象都得到通知并被自动更新。

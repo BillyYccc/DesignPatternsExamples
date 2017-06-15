@@ -194,3 +194,11 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [观察者模式](http://billyyccc.com/2017/06/13/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8821%EF%BC%89%EF%BC%9A%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8FOBSERVER/)
 
 > 定义对象间的一种一对多的依赖关系,当一个对象的状态发生改变时, 所有依赖于它的对象都得到通知并被自动更新。
+
+### IteratorDemo
+
+> Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+[迭代器模式](http://billyyccc.com/2017/06/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8822%EF%BC%89%EF%BC%9A%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8FITERATOR/)
+
+> 提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。

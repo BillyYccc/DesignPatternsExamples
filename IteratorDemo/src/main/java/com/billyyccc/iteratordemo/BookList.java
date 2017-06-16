@@ -29,10 +29,10 @@ public class BookList implements Aggregate {
 
     @Override
     public Iterator getIterator() {
-        return new UserNameIterator();
+        return new BookNameIterator();
     }
 
-    private class UserNameIterator implements Iterator {
+    private class BookNameIterator implements Iterator {
         private int index;
 
         @Override

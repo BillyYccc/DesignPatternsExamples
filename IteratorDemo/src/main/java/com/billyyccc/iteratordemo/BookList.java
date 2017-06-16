@@ -33,7 +33,7 @@ public class BookList implements Aggregate {
     }
 
     private class UserNameIterator implements Iterator {
-        int index;
+        private int index;
 
         @Override
         public boolean hasNext() {

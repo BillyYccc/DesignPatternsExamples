@@ -202,3 +202,11 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [迭代器模式](http://billyyccc.com/2017/06/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8822%EF%BC%89%EF%BC%9A%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8FITERATOR/)
 
 > 提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。
+
+### MediatorDemo
+
+> Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+
+[中介者模式](http://billyyccc.com/2017/06/16/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8823%EF%BC%89%EF%BC%9A%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8FMEDIATOR/)
+
+> 用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。

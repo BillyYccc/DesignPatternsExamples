@@ -12,7 +12,7 @@ import org.junit.Test;
 
 public class MediatorDemoTest {
     @Test
-    public void ShuangliuAirportTest() {
+    public void shuangliuAirportTest() {
         //实例化ConcreteMediator
         ATMTower atmTower = new ShuangliuATMTower();
 

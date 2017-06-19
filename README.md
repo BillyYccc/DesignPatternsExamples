@@ -210,3 +210,11 @@ Examples of multiple [design patterns](http://billyyccc.com/2017/04/27/%E8%AE%BE
 [中介者模式](http://billyyccc.com/2017/06/16/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8823%EF%BC%89%EF%BC%9A%E4%B8%AD%E4%BB%8B%E8%80%85%E6%A8%A1%E5%BC%8FMEDIATOR/)
 
 > 用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
+
+### VisitorDemo
+
+> Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+
+[访问者模式](http://billyyccc.com/2017/06/19/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8824%EF%BC%89%EF%BC%9A%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8FVISITOR/)
+
+> 表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。

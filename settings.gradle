@@ -21,6 +21,7 @@ include 'MementoDemo'
 include 'ChainOfResponsibilityDemo'
 include 'ObserverDemo'
 include 'IteratorDemo'
+include 'MediatorDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

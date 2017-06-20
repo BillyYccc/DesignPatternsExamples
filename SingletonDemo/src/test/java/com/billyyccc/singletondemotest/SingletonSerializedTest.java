@@ -26,7 +26,7 @@ import org.junit.Test;
 
 import java.io.*;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/4/27.

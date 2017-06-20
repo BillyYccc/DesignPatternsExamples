@@ -22,7 +22,7 @@ package com.billyyccc.singletondemotest;
 import com.billyyccc.singletondemo.EnumSingleton;
 import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/4/26.
@@ -31,7 +31,7 @@ import static org.assertj.core.api.Assertions.*;
 
 public class EnumSingletonTest {
     @Test
-    public void enumSingletonTest(){
+    public void enumSingletonTest() {
         EnumSingleton s1 = EnumSingleton.INSTANCE;
         EnumSingleton s2 = EnumSingleton.INSTANCE;
         s1.doSomething();

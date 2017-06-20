@@ -3,7 +3,7 @@ package com.billyyccc.interpreterdemotest;
 import com.billyyccc.interpreterdemo.Calculator;
 import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/6/20.

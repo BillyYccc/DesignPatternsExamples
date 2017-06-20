@@ -5,7 +5,7 @@ package com.billyyccc.interpreterdemo;
  * Email: billy112487983@gmail.com
  */
 
-/* 运算符号抽象解释器 */
+/* 运算符号抽象表达式 */
 public abstract class OperatorExpression extends ArithmeticExpression {
     protected ArithmeticExpression expression1, expression2;
 

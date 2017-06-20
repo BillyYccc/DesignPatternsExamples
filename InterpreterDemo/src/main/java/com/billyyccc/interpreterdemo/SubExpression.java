@@ -5,7 +5,7 @@ package com.billyyccc.interpreterdemo;
  * Email: billy112487983@gmail.com
  */
 
-/* 加法解释器, NonterminalExpression in Pattern */
+/* 减法表达式, NonterminalExpression in Pattern */
 public class SubExpression extends OperatorExpression {
     public SubExpression(ArithmeticExpression expression1, ArithmeticExpression expression2) {
         super(expression1, expression2);

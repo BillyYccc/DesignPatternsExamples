@@ -25,13 +25,13 @@ package com.billyyccc.abstractfactorydemo.entity.factory;
  */
 
 import com.billyyccc.abstractfactorydemo.base.AbstractComputerFactory;
+import com.billyyccc.abstractfactorydemo.base.DesktopComputer;
+import com.billyyccc.abstractfactorydemo.base.Laptop;
+import com.billyyccc.abstractfactorydemo.entity.computer.AppleLaptop;
 import com.billyyccc.abstractfactorydemo.entity.computer.DellDesktopComputer;
 import com.billyyccc.abstractfactorydemo.entity.cpu.Intel_i7_6500u;
 import com.billyyccc.abstractfactorydemo.entity.cpu.Intel_i7_7700k;
 import com.billyyccc.abstractfactorydemo.entity.gpu.Nvidia_GTX1080;
-import com.billyyccc.abstractfactorydemo.base.DesktopComputer;
-import com.billyyccc.abstractfactorydemo.base.Laptop;
-import com.billyyccc.abstractfactorydemo.entity.computer.AppleLaptop;
 import com.billyyccc.abstractfactorydemo.entity.ram.KingstonMemory;
 
 /**

@@ -19,9 +19,9 @@
 
 package com.billyyccc.abstractfactorydemo.entity.computer;
 
-import com.billyyccc.abstractfactorydemo.base.GPU;
 import com.billyyccc.abstractfactorydemo.base.CPU;
 import com.billyyccc.abstractfactorydemo.base.DesktopComputer;
+import com.billyyccc.abstractfactorydemo.base.GPU;
 import com.billyyccc.abstractfactorydemo.base.RAM;
 
 /**

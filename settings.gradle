@@ -23,6 +23,7 @@ include 'ObserverDemo'
 include 'IteratorDemo'
 include 'MediatorDemo'
 include 'VisitorDemo'
+include 'InterpreterDemo'
 
 // check that every subproject has a custom build file
 // based on the project name

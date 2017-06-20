@@ -26,10 +26,7 @@ import org.junit.Test;
 
 import java.io.*;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
-import static org.junit.Assert.assertThat;
-
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/4/27.
@@ -51,7 +48,7 @@ public class SingletonSerializedTest {
         in.close();
 
         //判断两个实例是否相同
-        assertThat(instanceA.hashCode(), not(instanceB.hashCode()));
+        assertThat(instanceA.hashCode()).isNotEqualTo(instanceB.hashCode());
     }
 
     @Test
@@ -68,7 +65,7 @@ public class SingletonSerializedTest {
         in.close();
 
         //判断两个实例是否相同
-        assertThat(instanceA.hashCode(), is(instanceB.hashCode()));
+        assertThat(instanceA.hashCode()).isEqualTo(instanceB.hashCode());
     }
 
     //枚举类型单例序列化和反序列化不会出现异常
@@ -86,6 +83,6 @@ public class SingletonSerializedTest {
         in.close();
 
         //判断两个实例是否相同
-        assertThat(instanceA.hashCode(), is(instanceB.hashCode()));
+        assertThat(instanceA.hashCode()).isEqualTo(instanceB.hashCode());
     }
 }

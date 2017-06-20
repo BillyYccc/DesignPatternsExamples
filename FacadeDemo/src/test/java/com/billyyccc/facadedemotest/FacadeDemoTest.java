@@ -6,8 +6,7 @@ import com.billyyccc.facadedemo.subsystem.ShippingService;
 import com.billyyccc.facadedemo.subsystem.WarehouseService;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/5/24.
@@ -19,6 +18,6 @@ public class FacadeDemoTest {
     public void orderBookTest() {
         OrderService orderService = new OrderService(new WarehouseService(), new ShippingService(), new PaymentService());
         boolean orderResult = orderService.order(100001, "Thinking In Java");
-        assertThat(orderResult, is(true));
+        assertThat(orderResult).isEqualTo(true);
     }
 }

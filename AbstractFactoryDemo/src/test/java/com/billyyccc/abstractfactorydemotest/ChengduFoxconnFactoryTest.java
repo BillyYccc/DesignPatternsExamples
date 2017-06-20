@@ -20,9 +20,9 @@
 package com.billyyccc.abstractfactorydemotest;
 
 import com.billyyccc.abstractfactorydemo.base.AbstractComputerFactory;
-import com.billyyccc.abstractfactorydemo.entity.factory.ChengduFoxconnFactory;
 import com.billyyccc.abstractfactorydemo.base.DesktopComputer;
 import com.billyyccc.abstractfactorydemo.base.Laptop;
+import com.billyyccc.abstractfactorydemo.entity.factory.ChengduFoxconnFactory;
 import org.junit.Test;
 
 /**

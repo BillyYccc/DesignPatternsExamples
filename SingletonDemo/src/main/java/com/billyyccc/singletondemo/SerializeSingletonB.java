@@ -26,7 +26,7 @@ import java.io.Serializable;
  * Email: billy112487983@gmail.com
  */
 
-public class SerializeSingletonB implements Serializable{
+public class SerializeSingletonB implements Serializable {
     //实现序列化接口的类，并且提供了readResolve方法的实现
     private SerializeSingletonB() {
     }
@@ -39,7 +39,7 @@ public class SerializeSingletonB implements Serializable{
         return SerializeSingletonB.SingletonHelper.instance;
     }
 
-    public Object readResolve(){
+    public Object readResolve() {
         return getInstance();
     }
 }

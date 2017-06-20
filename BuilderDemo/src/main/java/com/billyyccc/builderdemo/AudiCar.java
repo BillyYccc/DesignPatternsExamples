@@ -48,7 +48,7 @@ public class AudiCar extends Car {
     }
 
     /**
-     *  省略Director，直接使用Builder
+     * 省略Director，直接使用Builder
      */
     public static class AudiCarBuilder {
         private AudiCar audiCar = new AudiCar();

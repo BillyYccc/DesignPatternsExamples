@@ -22,8 +22,7 @@ package com.billyyccc.singletondemotest;
 import com.billyyccc.singletondemo.LazyInitializationSingletonB;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/4/26.
@@ -55,9 +54,6 @@ public class LazyInitializationSingletonBTest implements Runnable {
         System.out.println(s2.toString());
         System.out.println(s3.toString());
 
-        assertThat(s1.toString(), equalTo(s2.toString()));
-        assertThat(s2.toString(), equalTo(s3.toString()));
-        assertThat(s1.toString(), equalTo(s3.toString()));
-
+        assertThat(s1.toString()).isEqualTo(s2.toString()).isEqualTo(s3.toString());
     }
 }

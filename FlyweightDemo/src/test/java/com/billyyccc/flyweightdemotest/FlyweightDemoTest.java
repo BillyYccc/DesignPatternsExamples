@@ -4,9 +4,7 @@ import com.billyyccc.flyweightdemo.CreepsFactory;
 import com.billyyccc.flyweightdemo.MeleeCreep;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.both;
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Created by Billy Yuan on 2017/5/28.
@@ -42,11 +40,11 @@ public class FlyweightDemoTest {
         radiantMeleeCreepOnBottomLane.move(0, 0, 100, 0);
 
         //工厂只维护两个小兵对象
-        assertThat(direMeleeCreepOnTopLane.hashCode(),
-                both(is(direMeleeCreepOnMiddleLane.hashCode()))
-                        .and(is(direMeleeCreepOnBottomLane.hashCode())));
-        assertThat(radiantMeleeCreepOnTopLane.hashCode(),
-                both(is(radiantMeleeCreepOnMiddleLane.hashCode()))
-                        .and(is(radiantMeleeCreepOnBottomLane.hashCode())));
+        assertThat(direMeleeCreepOnTopLane.hashCode())
+                .isEqualTo(direMeleeCreepOnMiddleLane.hashCode())
+                .isEqualTo(direMeleeCreepOnBottomLane.hashCode());
+        assertThat(radiantMeleeCreepOnTopLane.hashCode())
+                .isEqualTo(radiantMeleeCreepOnMiddleLane.hashCode())
+                .isEqualTo(radiantMeleeCreepOnBottomLane.hashCode());
     }
 }

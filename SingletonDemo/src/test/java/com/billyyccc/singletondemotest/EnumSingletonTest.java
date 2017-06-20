@@ -22,8 +22,7 @@ package com.billyyccc.singletondemotest;
 import com.billyyccc.singletondemo.EnumSingleton;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Created by Billy Yuan on 2017/4/26.
@@ -39,6 +38,6 @@ public class EnumSingletonTest {
         System.out.println(s1.toString());
         s2.doSomething();
         System.out.println(s2.toString());
-        assertThat(s1.toString(), equalTo(s2.toString()));
+        assertThat(s1.toString()).isEqualTo(s2.toString());
     }
 }

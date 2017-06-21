@@ -11,7 +11,8 @@ public class Calculator {
     private Stack<ArithmeticExpression> expressionStack = new Stack<>();
 
     public Calculator(String expression) {
-        ArithmeticExpression expression1, expression2;
+        ArithmeticExpression expression1;
+        ArithmeticExpression expression2;
 
         String[] elements = expression.split(" ");
 
